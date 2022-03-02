@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Almarai';
+    src: url('../fonts/Almarai-Bold.woff2') format('woff2'),
+        url('../fonts/Almarai-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarai';
+    src: url('../fonts/Almarai-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Almarai-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarai';
+    src: url('../fonts/Almarai-Light.woff2') format('woff2'),
+        url('../fonts/Almarai-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarai';
+    src: url('../fonts/Almarai-Regular.woff2') format('woff2'),
+        url('../fonts/Almarai-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    direction: rtl;
+}
+
+.landing{
+    position: relative;
+    overflow: hidden;
+}
+
+
+@media(min-width:1200px){
+    .landing > .path-img{
+        position: absolute;
+        display: block;
+        top: -193%;
+        left: -53%;
+        z-index: -1;
+        background: url(../images/header_svg.svg);
+        width: 1700px;
+        height: 1700px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.landing-text h1{
+    color:#274559;
+    font-size: 41px;
+    font-weight: bold;
+    line-height: 1.6;
+
+}
+
+.landing-text p {
+    font-size: 25px;
+    color: #B9B9B9;
+    line-height: 1.5;
+}
+
+.landing-text a{
+    background:linear-gradient(to right , #41DDCB , #65F5E3);
+    color:#fff;
+    padding:11px 47px;
+    border-radius: 13px;
+    font-size: 18px;
+}
+
+.landing-image{
+    margin-top: 100px;
+}
+
+.experiance-box{
+    border:1px solid #E8E8E8;
+    border-radius: 42px;
+    background-color: #FAFAFA;
+}
+
+.experiance-box img{
+    width:100%;
+}
+
+.experiance-box p{  
+    padding:15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.our-countries{
+    margin-top:70px;
+}
+
+.our-countries h2{
+    color: #274559;
+    font-weight: bold;
+}
+
+.our-countries-box{
+    position: relative;
+    height: 600px;
+}
+
+@media(min-width:768px){
+    .our-countries-box{
+        background-image: url(../images/map.svg);
+        background-size: cover;
+    }
+}
+
+
+.our-countries  .our-countries-box > img{
+    position: absolute;
+    right: 50%;
+    transform: translateX(55%);
+    display: block;
+    margin-top: 30px;
+    z-index: -1;
+}
+
+
+
+.our-countries-box .country-element{
+    margin-top: 45px;
+    background-color: #fff;
+    width:100px;
+    padding:0;
+    box-shadow: 0 4px  10px #00000021;
+    border-radius: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.our-countries-box .country-element img{
+    display: block;
+}
+
+
+.elements-row{
+    max-width: 650px;
+    margin:auto
+}
+
+
+.elements-row-middel{
+    margin: auto;
+    max-width: 840px;
+}
+
+.elements-final{
+    margin: auto;
+    max-width: 600px;
+}
+
+
+.our-clients{
+    border:1px solid #CBCBCB;
+    border-radius: 32px;
+    padding:60px 25px;
+    background-color: #FAFAFA;
+}
+
+.our-clients h2{
+    position: relative;
+    font-weight: 600;
+    color: #274559;
+}
+
+.our-clients h2 img{
+    z-index: 333;
+    position: relative;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.our-clients h2::after{
+    content:"";
+    height: 2px;
+    width:250px;
+    background: #274559;
+    display: block;
+    position: absolute;
+    bottom:5px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.client-box{
+    background-color: #fff;
+    border-left: 5px solid #274559;
+    border-right: 5px solid #274559;
+    border-radius: 9px;
+    min-height: 175px;
+    padding: 15px;
+}
+
+.client-box p{
+    color:#BBBBBB;
+}
+
+.men-labor{
+    max-width: 400px;
+    margin:30px auto;
+    background-color: #274559;
+    border-radius: 43px;
+    color:#fff;
+    padding:2px 5px;
+}
+
+.men-labor .icon{
+    width:76px;
+    height:76px;
+    border-radius: 50%;
+    background-color: #41DDCB;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.men-labor span{
+    margin-right: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #274559;
+    color:#fff;
+    padding:30px;
+    text-align: center;
+}
+
+footer i{
+    color:#41DDCB;
+    font-size: 19px;
+    text-align: center;
+}
