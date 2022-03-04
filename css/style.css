@@ -358,14 +358,11 @@ footer i {
 
 .our-sections-box {
   max-width: 480px;
-  padding: 12px;
   box-shadow: 0 8px 14px #0000000f;
   border-radius: 20px;
   margin: 25px auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  padding:12px;
 }
 
 span.section-name {
@@ -382,8 +379,15 @@ span.section-name {
 
 .our-sections-box p {
   color: #274559;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+}
+
+.our-sections-box span:not(.section-name){
+  font-size: 16px;
+  color:#274559;
+  display: block;
+  margin:4px 0;
 }
 
 .our-sections-box h4 {
@@ -406,6 +410,7 @@ span.section-name {
 }
 
 .our-sections-box ul {
+  margin:12px 0;
 }
 
 .our-sections-box ul li:not(:last-of-type) {
@@ -454,6 +459,7 @@ span.section-name {
 
 .work-section p {
   font-size: 17px;
+  margin:15px 0;
 }
 
 .work-section p span {
