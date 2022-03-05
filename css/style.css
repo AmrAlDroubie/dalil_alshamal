@@ -128,6 +128,7 @@ body {
   border-radius: 42px;
   background-color: #fafafa;
   margin: 50px 0;
+  overflow: hidden;
 }
 
 .experiance-box img {
@@ -390,8 +391,9 @@ span.section-name {
 
 .our-sections-box p {
   color: #274559;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .our-sections-box span:not(.section-name){
@@ -444,10 +446,13 @@ span.section-name {
 }
 
 .our-sections-box .image {
+  height: 250px;
 }
+
 
 .our-sections-box .image img {
   border-radius: 25px;
+  max-height: 100%;
 }
 
 .our-sections-box a {
@@ -471,6 +476,10 @@ span.section-name {
 .work-section p {
   font-size: 17px;
   margin:15px 0;
+}
+
+.work-section .image {
+  height: 300px;
 }
 
 .work-section p span {
